@@ -25,7 +25,7 @@ function App() {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await fetch("http://localhost:3001/simulate", {
+      const response = await fetch("/simulate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(patientData),
